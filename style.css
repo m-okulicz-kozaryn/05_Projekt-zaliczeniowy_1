@@ -17,11 +17,17 @@ footer {
   font-size: 18px;
   color: whitesmoke;
 }
-nav .container,
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
 footer .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: left;
   height: 50px;
 }
 nav a,
@@ -45,6 +51,11 @@ footer a:hover {
 }
 .company-branding {
   font-weight: 600;
+}
+.footer icons {
+  display: flex;
+  justify-content: space-between;
+  width: 22%;
 }
 .landing-page {
   height: 100vh;
@@ -122,17 +133,25 @@ about us .container {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+  background-image: url(8b8eb0a8db11f39b1c062f8cdef5f605.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #c4c4c4;
   flex-direction: column;
   flex-shrink: 0;
+  margin-right: 5%;
 }
 .pic_two {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+  background-image: url(876476178e8cd6bcaab1269f7283d97b.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #907d7d;
   flex-direction: column-reverse;
   flex-shrink: 0;
+  margin-left: 5%;
 }
 .person:nth-of-type(even) {
   display: flex;
