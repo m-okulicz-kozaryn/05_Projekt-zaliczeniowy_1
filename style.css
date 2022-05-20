@@ -1,5 +1,6 @@
 body {
   font-family: Roboto, sans-serif;
+  scroll-behavior: smooth;
 }
 .container {
   max-width: 960px;
@@ -8,6 +9,8 @@ body {
 h1 {
   font-size: 34px;
   font-weight: 700;
+  height: 80px;
+  width: 500px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -94,13 +97,11 @@ footer a:hover {
   width: 164px;
   height: 40.74px;
   font-size: 18px;
+  transition: 1s all;
 }
 button:hover {
   background-color: whitesmoke;
-}
-button a:hover {
   color: black;
-  transition: 0.5s all;
   transform: scale(1.1);
 }
 .about us {
@@ -161,6 +162,17 @@ about us .container {
 .services {
   background-color: #405d78;
 }
+.ellipse {
+  background-color: #e07a64;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  display: flex;
+
+  position: absolute;
+  margin-left: -15px;
+  margin-top: -13px;
+}
 .services h1 {
   margin-bottom: 45px;
   color: whitesmoke;
@@ -168,19 +180,32 @@ about us .container {
 .service-details {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 10%;
 }
 .service-box {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  /*position: ;*/
   width: 198px;
   height: 193.78px;
-  margin-right: 10%;
   margin-bottom: 10%;
   background-color: #f1f1f1;
   filter: drop-shadow(0px 4px 4px) rgba(0, 0, 0, 0.25);
+  transition: 0.5s all;
+  outline: 1px solid transparent;
+  border: 1px solid transparent;
+}
+.new_service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
 }
 .service-box:hover {
-  transition: 0.5s all;
   transform: scale(1.1);
+  border: 1px solid rgb(232, 33, 33);
+  outline: 1px solid rgb(97, 178, 206);
 }
